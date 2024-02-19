@@ -20,13 +20,13 @@ const BikeCategories = ({ bikes }) => {
         setFilteredBikes(filtered);
     }, [category, price, bikes]);
 
-    console.log(filteredBikes);
+    //console.log(filteredBikes);
 
     return <section className='min-h-[1200px] py-10 '>
         <div className="container mx-auto">
             <div className="flex flex-col">
                 {/* Sidebar */}
-                <aside className='bg-yellow-100 w-full p-4 mb-8 xl:w-[300px] xl:h-[84vh] xl:fixed '>
+                <aside className='bg-yellow-100 w-full p-4 mb-8 xl:w-[300px] xl:h-[84vh]  xl:absolute '>
                     <RadioGroup defaultValue='all' className="flex flex-col mb-12 gap-6">
                         <div className='flex items-center space-x-2'>
                             <RadioGroupItem value='all' id='all' onClick={() => setCategory('all')} />

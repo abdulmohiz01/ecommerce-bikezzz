@@ -15,7 +15,7 @@ import Bike from "./Bike"
 const PopularBikeCarousel = ({ bikes }) => {
     // console.log(bikes)
     return (
-        <Swiper slidesPerView={1} spaceBetween={30} breakpoints={{ 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 968: { slidesPerView: 3 }, 1440: { slidesPerView: 4 } }} pagination={{ clickable: true ,  }} modules={{ Pagination }} className=" mb-8" >
+        <Swiper slidesPerView={1} spaceBetween={30} breakpoints={{ 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 968: { slidesPerView: 3 }, 1440: { slidesPerView: 4 } }} pagination={{ clickable: true }} modules={[Pagination]} className="popular-bike-slider mb-8" >
             {bikes.map((bike) => {
                 //  console.log(bike)
                 return <SwiperSlide key={bike._id}>
